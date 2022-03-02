@@ -13,26 +13,72 @@
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lb-0">
-                        <li>
-                        <a class="nav-link active" href="#">STATS</a>
+                        <li class="navbar-item">
+                            <a class="nav-link active" href="#">STATS</a>
                         </li>
-                        <li>
-                        <a class="nav-link" href="#">INV</a>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="#">INV</a>
                         </li>
-                        <li>
-                        <a class="nav-link" href="#">DATA</a>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="#">DATA</a>
                         </li>
-                        <li>
-                        <a class="nav-link" href="#">MAP</a>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="#">MAP</a>
                         </li>
-                        <li>
-                        <a class="nav-link" href="#">RADIO</a>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="#">RADIO</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
+       
+        <ul class="nav nav-tabs">
+            <li class="nav-item" role="presentation">
+                <button href="#status" class="nav-link" id="status-tab" data-bs-toggle="tab" data-bs-target="#status" type="button" role="tab" aria-controls="status" aria-selected="true">
+                    STATUS
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button href="#special" class="nav-link" id="special-tab" data-bs-toggle="tab" data-bs-target="#special" type="button" role="tab" aria-controls="special" aria-selected="false">
+                    SPECIAL
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button href="#perks" class="nav-link" id="perks-tab" data-bs-toggle="tab" data-bs-target="#perks" type="button" role="tab" aria-controls="perks" aria-selected="false">
+                    PERKS
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane" id="status" role="tabpanel">
+                <div class="center-img">
+                    <img src="img/vaultboy.png" alt="">
+                </div>
+            </div>
+            <div class="tab-pane" id="special" role="tabpanel">
+                SPECIAL
+            </div>
+            <div class="tab-pane" id="perks" role="tabpanel">
+                PERKS
+            </div>
+        </div>
+
+        <div class="navbar navbar-light pip-footer">
+            <div class="row">
+                <div class="col-3">
+                    HP 90/90
+                </div>
+                <div class="col-6">
+                    LEVEL 1
+                    <div class="level-progress"></div>
+                </div>
+                <div class="col-3">
+                    AP 50/50
+                </div>
+            </div>
+        </div>
         
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/bootstrap.min.js"></script>

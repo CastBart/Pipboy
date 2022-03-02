@@ -1,0 +1,35 @@
+body, .bg-light{
+    color: #05f225;
+    background: #272b23 !important;
+}
+ul > li.nav-item > button.nav-link, ul > li.navbar-item > a.nav-link, ul > li.navbar-item.active > button.nav-link{
+    color: #05f225 !important;
+    background: #272b23 !important;
+    border-color: #05f225;
+
+}
+.nav-tabs{
+    border-bottom: 1px solid #05f225;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    
+    border-color: #05f225;
+    box-shadow: 0px 0px 10px inset #05f225;
+}
+
+.center-img img{
+margin: auto;
+display: block;
+    position: relative;
+    max-height: 300px;
+    margin-top: 100px;
+    filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) contrast(2);
+}
+
+.pip-footer{
+    position: fixed;
+    bottom: 0px;
+    width: calc(100% - 20px);
+    margin: 10px;
+    display: inline;
+}
