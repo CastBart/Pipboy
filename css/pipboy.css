@@ -1,25 +1,119 @@
+@font-face {
+    font-family: Pipboy;
+    src: url("/fonts/monofonto.otf");
+}
+
+
 body, .bg-light{
+    font-family: Pipboy, sans-serif;
     color: #05f225;
     background: #272b23 !important;
 }
-ul > li.nav-item > button.nav-link, ul > li.navbar-item > a.nav-link, ul > li.navbar-item.active > button.nav-link{
+body::after{
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: repeating-linear-gradient(
+        0deg, rgba(0,0,0,.5),
+        rgba(0,0,0,.4) 1px,
+        transparent 1px,
+        transparent 2px);
+    opacity: .4;
+    z-index: 10000;
+    pointer-events: none;
+}
+
+/*start of border underneath navigation*/
+.navbar{
+    border-bottom: 2px solid;
+    margin: 0px 10px;
+}
+.container-fluid{
+    max-width: 80vw;
+    margin: auto;
+}
+.navbar::before, .navbar::after{
+    height: 5px;
+    width: 2px;
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 5000;
+    background: #05f225;
+    bottom: -7px;
+}
+.navbar::before{
+    left: 0px;
+}
+.navbar::after{
+    right: 0px
+}
+/*end of border underneath navigation*/
+
+ul > li.nav-item > button.nav-link,
+ul > li.navbar-item > a.nav-link,
+ul > li.navbar-item.active > button.nav-link{
     color: #05f225 !important;
     background: #272b23 !important;
-    border-color: #05f225;
+    border: none;
+    border-radius: 2px;
 
 }
-.nav-tabs{
-    border-bottom: 1px solid #05f225;
+.navbar-item.active::before{
+    content: "";
+    position: absolute;
+    background: #272b23;
+    width: 100%;
+    height: 20px;
+    left: 0px;
+    bottom: -10px;
+    border-top: 2px solid #05f225;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    z-index: 1;
 }
-.nav-tabs .nav-link.active, .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+ul > li.navbar-item > a.nav-link{
+    width:fit-content;
+    margin: auto;
+    font-size: 32px;
+    line-height: 20px;
+    padding-bottom: 0px;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+
+}
+
+.navbar-nav{
+    width: 100%;
+}
+
+.navbar-light ul.navbar-nav > li{
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+
+.nav-tabs{
+    border-bottom: none;
+}
+/*buttons when active focused or hovered
+  box shadow inside*/
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover{
     
     border-color: #05f225;
     box-shadow: 0px 0px 10px inset #05f225;
 }
 
 .center-img img{
-margin: auto;
-display: block;
+    margin: auto;
+    display: block;
     position: relative;
     max-height: 300px;
     margin-top: 100px;
