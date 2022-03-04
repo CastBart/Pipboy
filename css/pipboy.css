@@ -3,7 +3,6 @@
     src: url("/fonts/monofonto.otf");
 }
 
-
 body, .bg-light{
     font-family: Pipboy, sans-serif;
     color: #05f225;
@@ -110,13 +109,13 @@ ul > li.navbar-item > a.nav-link{
     border-color: #05f225;
     box-shadow: 0px 0px 10px inset #05f225;
 }
-
 .center-img img{
     margin: auto;
     display: block;
-    position: relative;
+    position: absolute;
     max-height: 300px;
     margin-top: 100px;
+    left: calc(50vw - 87px);
     filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) contrast(2);
 }
 
@@ -180,4 +179,94 @@ div .col.status-col > ul{
 }
 .pip-footer-stats-container{
     margin: auto;
+    max-width: 800px
+}
+.tab-content{
+    display: flex;
+    justify-content: center;
+}
+#status{
+    flex: 1;
+}
+.stat-bar-container{
+    max-width: 350px;
+    margin: auto;
+    margin-top: 4em;
+}
+.stat-bar{
+    max-height: 1em;
+    height: 0.7em;
+    border: 0.1em solid;
+    max-width: 4em;
+    width: 4em;
+    margin: .5em auto;
+    margin-bottom: 6em;
+
+}
+.stat-bar-value{
+    height: 100%;
+    width: 100%;
+    background: #05f225;
+}
+
+.der-container{
+    width: 80%;
+    margin: auto;
+}
+.der-container .col-1, .der-container .col-2{
+    background: #05f2252d;
+    margin-right: 4px;
+
+}
+.der-container .col-1 img, .der-container .col-2 img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(38) contrast(2);
+
+}
+
+.col-1.transparent,.col-2.transparent{
+    background: transparent
+}
+.icon{
+    padding: .2em;
+}
+
+
+
+
+
+
+
+
+
+.sb-w-10{
+    width: 10%;
+}
+.sb-w-20{
+    width: 20%;
+}
+.sb-w-30{
+    width: 30%;
+}
+.sb-w-40{
+    width: 40%;
+}
+.sb-w-50{
+    width: 50%;
+}
+.sb-w-60{
+    width: 60%;
+}
+.sb-w-70{
+    width: 70%;
+}
+.sb-w-80{
+    width: 80%;
+}
+.sb-w-90{
+    width: 90%;
+}
+.sb-w-100{
+    width: 100%;
 }
