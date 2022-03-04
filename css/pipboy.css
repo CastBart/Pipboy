@@ -201,8 +201,11 @@ div .col.status-col > ul{
     width: 4em;
     margin: .5em auto;
     margin-bottom: 6em;
-
 }
+.stat-bar.bottom-stat-bar{
+    margin-bottom: 2em;
+}
+
 .stat-bar-value{
     height: 100%;
     width: 100%;
@@ -210,7 +213,7 @@ div .col.status-col > ul{
 }
 
 .der-container{
-    width: 80%;
+    max-width: 500px;
     margin: auto;
 }
 .der-container .col-1, .der-container .col-2{
@@ -222,7 +225,10 @@ div .col.status-col > ul{
     width: 100%;
     height: 100%;
     filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(38) contrast(2);
-
+}
+.der-container .col-2 img{
+    width: 50px;
+    height: 50px;
 }
 
 .col-1.transparent,.col-2.transparent{
@@ -230,6 +236,8 @@ div .col.status-col > ul{
 }
 .icon{
     padding: .2em;
+    height: 20px;
+    width: 20px;
 }
 
 
