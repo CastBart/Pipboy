@@ -185,9 +185,6 @@ div .col.status-col > ul{
     display: flex;
     justify-content: center;
 }
-#status{
-    flex: 1;
-}
 .stat-bar-container{
     max-width: 350px;
     margin: auto;
@@ -239,6 +236,49 @@ div .col.status-col > ul{
     height: 20px;
     width: 20px;
 }
+
+.tab-content.item-list{
+    display: block;
+    float: left;
+}
+
+ul.item-list {
+    display: block;
+    list-style: none;
+    margin-top: 1em;
+    padding-left: 0;
+}
+ul.item-list li > a{    
+    text-decoration: none;
+    padding: 0.2em;
+    display: block;
+    width: 100%;
+    color: #05f225;
+}
+ul.item-list li > a:hover{
+    text-decoration: none;
+    color: #272b23;
+    background: #05f225;
+}
+.item-stat-container{
+    height: calc(100vh - 20em);
+    align-content: flex-end;
+    justify-content: end;
+}
+.item-stat-container .highlight{
+    background: #05f2252d;
+    margin: .1em 0;
+}
+.item-stat-container .pull-left{
+    display: inline-block;
+    float: left;
+}
+.item-stat-container .pull-right{
+    display: inline-block;
+    float: right;
+}
+
+
 
 
 
